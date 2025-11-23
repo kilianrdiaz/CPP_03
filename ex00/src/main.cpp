@@ -9,10 +9,14 @@ int main()
     a.takeDamage(8);
     a.attack("target2");
     a.takeDamage(20);
-    a.beRepaired(3); // no puede repararse si HP == 0
-    ClapTrap b = a;  // copy
+    a.beRepaired(3);
+
+    ClapTrap b = a;
     b.attack("target3");
+
     ClapTrap c("Charlie");
-    c = a;           // assignment
+    c = a;
+    c.attack("target4");
+
     return 0;
 }
