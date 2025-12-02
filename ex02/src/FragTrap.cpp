@@ -4,12 +4,18 @@
 FragTrap::FragTrap()
     : ClapTrap("Default_FragTrap")
 {
+    this->_hitPoints = 100;
+	this->_energyPoints = 100;
+	this->_attackDamage= 30;
     std::cout << "FragTrap " << getName() << " constructed with default name" << std::endl;
 }
 
 FragTrap::FragTrap(const std::string& name)
     : ClapTrap(name)
 {
+    this->_hitPoints = 100;
+	this->_energyPoints = 100;
+	this->_attackDamage= 30;
     std::cout << "FragTrap " << getName() << " constructed" << std::endl;
 }
 
@@ -41,8 +47,10 @@ void FragTrap::attack(const std::string& target)
         std::cout << "FragTrap " << getName() << " can't attack, it has no energy points left." << std::endl;
         return;
     }
+    --this->_energyPoints;
     std::cout << "FragTrap " << getName() << " attacks " << target
-              << ", causing " << getAttackDamage() << " points of damage!" << std::endl;
+              << ", causing " << getAttackDamage() << " points of damage!"
+              << "(EP left: " << _energyPoints << ")" << std::endl;
 }
 
 void FragTrap::highFivesGuys()
