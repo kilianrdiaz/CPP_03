@@ -4,13 +4,13 @@
 ClapTrap::ClapTrap()
     : name("Default"), _hitPoints(10), _energyPoints(10), _attackDamage(0)
 {
-    std::cout << "ClapTrap " << this->name << " constructed." << std::endl;
+    std::cout << "ClapTrap " << this->name << " constructed" << std::endl;
 }
 
 ClapTrap::ClapTrap(const std::string& name)
     : name(name), _hitPoints(10), _energyPoints(10), _attackDamage(0)
 {
-    std::cout << "ClapTrap " << this->name << " constructed." << std::endl;
+    std::cout << "ClapTrap " << this->name << " constructed" << std::endl;
 }
 
 ClapTrap::ClapTrap(const ClapTrap& other)

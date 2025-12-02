@@ -3,8 +3,8 @@
 
 int main()
 {
-    ScavTrap s;
-    
+    ScavTrap s("Scavy");
+
     s.attack("a dummy");
     s.guardGate();
     s.takeDamage(30);
