@@ -43,7 +43,6 @@ void FragTrap::attack(const std::string& target)
     }
     std::cout << "FragTrap " << getName() << " attacks " << target
               << ", causing " << getAttackDamage() << " points of damage!" << std::endl;
-    // decrement energy etc (see note sobre acceso a miembros)
 }
 
 void FragTrap::highFivesGuys()

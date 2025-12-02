@@ -85,7 +85,6 @@ void ClapTrap::beRepaired(unsigned int amount)
               << " points! (HP: " << _hitPoints << ", EP: " << _energyPoints << ")" << std::endl;
 }
 
-// getters
 const std::string& ClapTrap::getName() const { return name; }
 unsigned int ClapTrap::getHitPoints() const { return _hitPoints; }
 unsigned int ClapTrap::getEnergyPoints() const { return _energyPoints; }

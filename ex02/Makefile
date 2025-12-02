@@ -22,6 +22,8 @@ $(NAME): $(OBJ)
 $(OBJDIR)/%.o: $(SRCDIR)/%.cpp | $(OBJDIR)
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
+$(OBJ): $(INCDIR)/ClapTrap.hpp $(INCDIR)/ScavTrap.hpp $(INCDIR)/FragTrap.hpp Makefile
+
 $(OBJDIR):
 	mkdir -p $(OBJDIR)
 

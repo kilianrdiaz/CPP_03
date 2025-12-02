@@ -16,4 +16,4 @@ class FragTrap : public ClapTrap
         void highFivesGuys();
 };
 
-#endif // FRAGTRAP_HPP
+#endif

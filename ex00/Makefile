@@ -20,6 +20,8 @@ $(NAME): $(OBJ)
 $(OBJDIR)/%.o: $(SRCDIR)/%.cpp | $(OBJDIR)
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
+$(OBJ): $(INCDIR)/ClapTrap.hpp Makefile
+
 $(OBJDIR):
 	mkdir -p $(OBJDIR)
 
